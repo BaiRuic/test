@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-30T05:30:54.175Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37" etag="TTwSMBwidiV9ycVmL0c-" version="14.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-30T05:32:19.265Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37" etag="AsuKu_xXDo6Dr6ZVDvKn" version="14.7.3" type="github">
   <diagram id="bu5lm8wExsLP5NeLCZCM" name="第 1 页">
-    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="677" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -70,8 +70,29 @@
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-25" value="preorder: [1, 2, #, #, 3, 4, #, #, 5, #, # ]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="190" y="420" width="240" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="7SuwNwZ2lyHalRhBw8_W-26" target="7SuwNwZ2lyHalRhBw8_W-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="648" />
+              <mxPoint x="440" y="548" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-43" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.209;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7SuwNwZ2lyHalRhBw8_W-26" target="7SuwNwZ2lyHalRhBw8_W-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="448" y="683" />
+              <mxPoint x="448" y="720" />
+              <mxPoint x="440" y="720" />
+              <mxPoint x="440" y="745" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-26" value="&lt;font color=&quot;#ff0000&quot;&gt;[1, 2, #, #, 3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(1)&lt;br&gt;node.left = deser([2, #, #, 3, 4, #, #, 5, #, #])&lt;br&gt;node.right = deser([3, 4, #, #, 5, #, #])" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="182.5" y="630" width="245" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="7SuwNwZ2lyHalRhBw8_W-27" target="7SuwNwZ2lyHalRhBw8_W-26">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-27" value="&lt;font color=&quot;#ff0000&quot;&gt;[2, #, #, 3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(2)&lt;br&gt;node.left = deser([#, #, 3, 4, #, #, 5, #, #])&lt;br&gt;node.right = deser([#, 3, 4, #, #, 5, #, #])&lt;br&gt;return node&amp;nbsp;" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="480" y="530" width="245" height="70" as="geometry" />
@@ -81,6 +102,14 @@
         </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-30" value="&lt;font color=&quot;#ff0000&quot;&gt;[#, 3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;首节点为 #&amp;nbsp;&lt;br&gt;return None" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="750" y="570" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-44" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.995;entryY=0.869;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7SuwNwZ2lyHalRhBw8_W-31" target="7SuwNwZ2lyHalRhBw8_W-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="783" />
+              <mxPoint x="430" y="691" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-31" value="&lt;font color=&quot;#ff0000&quot;&gt;[3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(3)&lt;br&gt;node.left = deser([4, #, #, 5, #, #])&lt;br&gt;node.right = deser([5, #, #])" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="450" y="730" width="190" height="70" as="geometry" />

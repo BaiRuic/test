@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-30T05:25:38.721Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37" etag="QCf6Sycwn9GGgk8vPYtD" version="14.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-30T05:30:54.175Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 Edg/91.0.864.37" etag="TTwSMBwidiV9ycVmL0c-" version="14.7.3" type="github">
   <diagram id="bu5lm8wExsLP5NeLCZCM" name="第 1 页">
-    <mxGraphModel dx="677" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -71,16 +71,37 @@
           <mxGeometry x="190" y="420" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-26" value="&lt;font color=&quot;#ff0000&quot;&gt;[1, 2, #, #, 3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(1)&lt;br&gt;node.left = deser([2, #, #, 3, 4, #, #, 5, #, #])&lt;br&gt;node.right = deser([3, 4, #, #, 5, #, #])" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="185" y="530" width="245" height="70" as="geometry" />
+          <mxGeometry x="182.5" y="630" width="245" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-27" value="&lt;font color=&quot;#ff0000&quot;&gt;[2, #, #, 3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(2)&lt;br&gt;node.left = deser([#, #, 3, 4, #, #, 5, #, #])&lt;br&gt;node.right = deser([#, 3, 4, #, #, 5, #, #])&lt;br&gt;return node&amp;nbsp;" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="480" y="530" width="245" height="70" as="geometry" />
         </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-28" value="&lt;font color=&quot;#ff0000&quot;&gt;[#, #, 3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;首节点为 #&amp;nbsp;&lt;br&gt;return None" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="760" y="530" width="245" height="60" as="geometry" />
+          <mxGeometry x="750" y="500" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7SuwNwZ2lyHalRhBw8_W-30" value="&lt;font color=&quot;#ff0000&quot;&gt;[#, 3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;首节点为 #&amp;nbsp;&lt;br&gt;return None" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="760" y="600" width="245" height="60" as="geometry" />
+          <mxGeometry x="750" y="570" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-31" value="&lt;font color=&quot;#ff0000&quot;&gt;[3, 4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(3)&lt;br&gt;node.left = deser([4, #, #, 5, #, #])&lt;br&gt;node.right = deser([5, #, #])" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="730" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-32" value="&lt;font color=&quot;#ff0000&quot;&gt;[4, #, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(4)&lt;br&gt;node.left = deser([#, #, 5, #, #])&lt;br&gt;node.right = deser([#, 5, #, #])" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="690" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-34" value="&lt;font color=&quot;#ff0000&quot;&gt;[#, #, 5, #, # ]&lt;/font&gt;&lt;br&gt;首节点为 #&amp;nbsp;&lt;br&gt;return None" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="660" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-35" value="&lt;font color=&quot;#ff0000&quot;&gt;[ #, 5, #, # ]&lt;/font&gt;&lt;br&gt;首节点为 #&amp;nbsp;&lt;br&gt;return None" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="735" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-38" value="&lt;font color=&quot;#ff0000&quot;&gt;[5, #, # ]&lt;/font&gt;&lt;br&gt;node = TreeNode(5)&lt;br&gt;node.left = deser([#, #])&lt;br&gt;node.right = deser([#])" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="840" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-39" value="&lt;font color=&quot;#ff0000&quot;&gt;[&amp;nbsp; #, # ]&lt;/font&gt;&lt;br&gt;首节点为 #&amp;nbsp;&lt;br&gt;return None" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="810" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7SuwNwZ2lyHalRhBw8_W-40" value="&lt;font color=&quot;#ff0000&quot;&gt;[ # ]&lt;/font&gt;&lt;br&gt;首节点为 #&amp;nbsp;&lt;br&gt;return None" style="text;html=1;strokeColor=#36393d;fillColor=#eeeeee;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="890" width="90" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
